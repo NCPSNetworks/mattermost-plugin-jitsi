@@ -67,7 +67,7 @@ export default class Conference extends React.PureComponent<Props, State> {
     //     // '27' == escape key
     //     if (event.keyCode === 27) {
     //         this.close();
-     //    }
+    //    }
     // };
 
     preventMessages = (event: MessageEvent) => {
