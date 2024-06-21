@@ -63,7 +63,7 @@ export default class Conference extends React.PureComponent<Props, State> {
         return Math.max(document.documentElement.clientHeight || 0, window?.innerHeight || 0) - (BORDER_SIZE * 2);
     }
 
-    // escFunction = (event: any) => {
+    //  = (event: any) => {
     //     // '27' == escape key
     //     if (event.keyCode === 27) {
     //         this.close();
@@ -152,25 +152,25 @@ export default class Conference extends React.PureComponent<Props, State> {
         }
     };
 
-    componentDidMount() {
-        document.addEventListener('keydown', this.escFunction, false);
-        window.addEventListener('resize', this.resizeIframe);
-        window.addEventListener('message', this.preventMessages, false);
-        window.requestAnimationFrame(() => {
-            if (this.props.post) {
-                this.initJitsi(this.props.post);
-            }
-        });
-    }
+    // componentDidMount() {
+    //     document.addEventListener('keydown', this., false);
+    //     window.addEventListener('resize', this.resizeIframe);
+    //     window.addEventListener('message', this.preventMessages, false);
+    //     window.requestAnimationFrame(() => {
+    //         if (this.props.post) {
+    //             this.initJitsi(this.props.post);
+    //         }
+    //     });
+    // }
 
-    componentWillUnmount() {
-        document.removeEventListener('keydown', this.escFunction, false);
-        window.removeEventListener('resize', this.resizeIframe);
-        window.removeEventListener('message', this.preventMessages, false);
-        if (this.api) {
-            this.api.dispose();
-        }
-    }
+    // componentWillUnmount() {
+    //     document.removeEventListener('keydown', this., false);
+    //     window.removeEventListener('resize', this.resizeIframe);
+    //     window.removeEventListener('message', this.preventMessages, false);
+    //     if (this.api) {
+    //         this.api.dispose();
+    //     }
+    // }
 
     componentDidUpdate(prevProps: Props, prevState: State) {
         if (this.props.post) {
