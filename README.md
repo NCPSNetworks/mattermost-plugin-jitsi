@@ -2,7 +2,7 @@
 
 **This repository is community supported and not maintained by Mattermost. Mattermost disclaims liability for integrations, including Third Party Integrations and Mattermost Integrations. Integrations may be modified or discontinued at any time.**
 
-# Mattermost Jitsi Plugin (Beta)
+# Mattermost Jitsi Plugin
 
 [![Build Status](https://img.shields.io/circleci/project/github/mattermost/mattermost-plugin-jitsi/master)](https://circleci.com/gh/mattermost/mattermost-plugin-jitsi)
 [![Code Coverage](https://img.shields.io/codecov/c/github/mattermost/mattermost-plugin-jitsi/master)](https://codecov.io/gh/mattermost/mattermost-plugin-jitsi)
