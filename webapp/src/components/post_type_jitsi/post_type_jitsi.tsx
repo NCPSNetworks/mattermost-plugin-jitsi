@@ -51,7 +51,7 @@ export class PostTypeJitsi extends React.PureComponent<Props, State> {
             e.preventDefault();
             if (this.props.post) {
                 // could be improved by using an enum in the future for the status
-                this.props.actions.setUserStatus(this.props.currentUser.id, Constants.DND);
+                // this.props.actions.setUserStatus(this.props.currentUser.id, Constants.DND);
                 this.props.actions.openJitsiMeeting(this.props.post, this.state.meetingJwt || this.props.post.props.meeting_jwt || null);
             }
         } else if (this.state.meetingJwt) {
